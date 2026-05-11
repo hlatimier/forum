@@ -13,6 +13,11 @@ const SECRET = "CHANGE_ME_SUPER_SECRET";
 
 app.use(express.json());
 
+const PORT = process.env.PORT || 3000;
+
+app.listen(PORT, () => {
+  console.log("Server running");
+});
 /* =========================
    BASE DE DONNEES
 ========================= */
